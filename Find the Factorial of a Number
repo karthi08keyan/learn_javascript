@@ -5,7 +5,7 @@
 <head>  
  
 </head> 
-  
+   
 <body style = "text-align: center; font-size: 20px;"> 
 
 <h1> Welcome to the javaScript world!! </h1>
@@ -32,7 +32,7 @@ for(i = 1; i <= num; i++)
  
 {
 
-f = f * i; 
+f = f * i;   
 
 }
 
