@@ -1,0 +1,154 @@
+body {
+  background: radial-gradient(#29D5C9 15%, transparent 0),
+              radial-gradient(#29D5C9 15%, transparent 0), #BFFFFB;
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+.container {
+  background-color: #29D5C9;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 30px auto;
+  position: relative;
+}
+
+.head {
+  background-color: #FDE9DA;
+  height: 50%;
+  width: 60%;
+  border-radius: 50%;
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  box-shadow: 0px 3px 20px #177871;
+}
+
+.eye {
+  background-color: #333;
+  height: 5.5%;
+  width: 5.5%;
+  border-radius: 50%;
+  position: absolute;
+  top: 53%;
+  animation: blink 2s alternate infinite;
+}
+
+.eye:after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  height: 25%;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@keyframes blink {
+  0%, 95% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.1);
+  }
+}
+
+.eye-left {
+  left: 35%;
+}
+
+.eye-right {
+  right: 35%;
+}
+
+.ear {
+  background-color: #FDE9DA;
+  height: 10%;
+  width: 8%;
+  border-radius: 50%;
+  position: absolute;
+  top: 48%;
+}
+
+.ear-left {
+  left: 16%;
+  box-shadow: -4px 0px 4px rgba(23, 120, 113, 0.44);
+}
+
+.ear-right {
+  right: 16%;
+  box-shadow: 4px 0px 4px rgba(23, 120, 113, 0.44);
+}
+
+.cheek {
+  background-color: #FFB7BF;
+  height: 4.5%;
+  width: 5%;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+}
+
+.cheek-left {
+  left: 30%;
+}
+
+.cheek-right {
+  right: 30%;
+}
+
+.hair {
+  background-color: transparent;
+  position: absolute;
+  top: 25.5%;
+  left: 44%;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  border-left: 10px solid #663322;
+  border-bottom: 5px solid #663322;
+}
+
+.pacifier {
+  height: 8.5%;
+  width: 8.5%;
+  position: absolute;
+  top: 62%;
+  left: 46.1%;
+  animation: move 200ms linear infinite alternate;
+}
+
+@keyframes move {
+  to {
+    transform: translateY(-1px) scale(0.98);
+  }
+}
+
+.pacifier-middle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(rgb(223, 161, 255), rgb(163, 121, 235));
+  border-radius: 50%;
+}
+
+.pacifier-side {
+  position: absolute;
+  top: -5%;
+  height: 110%;
+  width: 105%;
+  border: 8px solid rgb(163, 121, 235);
+  opacity: 0.8;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.pacifier-side-left {
+  right: 60%;
+}
+
+.pacifier-side-right {
+  left: 60%;
+}
