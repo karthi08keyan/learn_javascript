@@ -1,0 +1,11 @@
+const number = parseInt(prompt('enter the number '));
+
+if (number < 0){
+    console.log('thats is negative')
+}
+else if (number == 0){
+    console.log( 'that is zero ')
+}
+else{
+    console.log('that is possitive')
+}
